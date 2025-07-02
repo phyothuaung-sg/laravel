@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is ShowUI page.</h1>
+    <h2>{{ $title }}</h2>
+    <ul>
+        @foreach ($todos as $todo)
+            <li>{{ $todo }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

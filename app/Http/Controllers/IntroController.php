@@ -8,18 +8,18 @@ class IntroController extends Controller
 {
      public function show()
     {
-        return view('showui');
+        $todos = [
+            'Learn Laveral',
+            'Learn Vue',
+            'Learn Inertia',
+        ];
+        $title = 'Hello Laravel, This is show UI.';
+        return view('showui', compact('title','todos'));
     }
 
-    public function about()
+    public function testfun()
     {
-        return view('about');
+        return view('test.testui');
     }
-
-    public function contact()
-    {
-        return view('contact');
-    }
-
     
 }
