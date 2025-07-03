@@ -13,11 +13,11 @@ class TemplateController extends Controller
 
      public function post()
     {
-        return view();
+        return view('mytemplate.post');
     }
 
      public function contact()
     {
-        return view();
+        return view('mytemplate.contact');
     }
 }
