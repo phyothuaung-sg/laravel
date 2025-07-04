@@ -13,15 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('welcome');
+//})->name('home');
 
 Route::get('/intros', [App\Http\Controllers\IntroController::class, 'show']);
 
 
 Route::get('/test', [App\Http\Controllers\IntroController::class, 'testfun']);
 
-Route::get('/about', [App\Http\Controllers\TemplateController::class, 'about']);
-Route::get('/post', [App\Http\Controllers\TemplateController::class, 'post']);
-Route::get('/contact', [App\Http\Controllers\TemplateController::class, 'contact']);
+Route::get('/', [App\Http\Controllers\TemplateController::class, 'index'])->name('homepage');
+Route::get('/about', [App\Http\Controllers\TemplateController::class, 'about'])->name('about');
+Route::get('/post', [App\Http\Controllers\TemplateController::class, 'post'])->name('post');
+Route::get('/contact', [App\Http\Controllers\TemplateController::class, 'contact'])->name('contact');
