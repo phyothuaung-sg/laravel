@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CategoryController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +33,6 @@ Route::get('/contact', [App\Http\Controllers\TemplateController::class, 'contact
 Route::get('/', [App\Http\Controllers\BackendTemplateController::class, 'index'])->name('homepage');
 Route::get('/table', [App\Http\Controllers\BackendTemplateController::class, 'tablefun'])->name('tablepage');
 Route::get('/chart', [App\Http\Controllers\BackendTemplateController::class, 'chart'])->name('chartpage');
+
+
+Route::resource('categories',CategoryController::class);

@@ -103,7 +103,7 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('backend_assets/js/demo/datatables-demo.js') }}"></script>
 
-    <!-- For chart page -->
+    <!-- For chart page js -->
     <script src="{{ asset('backend_assets/vendor/chart.js/Chart.min.js') }}"></script>
     <script src="{{ asset('backend_assets/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('backend_assets/js/demo/chart-pie-demo.js') }}"></script>
