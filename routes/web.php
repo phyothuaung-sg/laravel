@@ -26,3 +26,8 @@ Route::get('/', [App\Http\Controllers\TemplateController::class, 'index'])->name
 Route::get('/about', [App\Http\Controllers\TemplateController::class, 'about'])->name('about');
 Route::get('/post', [App\Http\Controllers\TemplateController::class, 'post'])->name('post');
 Route::get('/contact', [App\Http\Controllers\TemplateController::class, 'contact'])->name('contact');
+
+//Backend
+Route::get('/', [App\Http\Controllers\BackendTemplateController::class, 'index'])->name('homepage');
+Route::get('/table', [App\Http\Controllers\BackendTemplateController::class, 'tablefun'])->name('tablepage');
+Route::get('/chart', [App\Http\Controllers\BackendTemplateController::class, 'chart'])->name('chartpage');
