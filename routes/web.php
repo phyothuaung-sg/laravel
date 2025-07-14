@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CategoryController;
 
+use App\Http\Controllers\StudentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +38,5 @@ Route::get('/chart', [App\Http\Controllers\BackendTemplateController::class, 'ch
 
 
 Route::resource('categories',CategoryController::class);
+
+Route::resource('students',StudentController::class);

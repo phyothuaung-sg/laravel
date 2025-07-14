@@ -98,17 +98,23 @@
         </li>
 
         <!-- Nav Item - Tables -->
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('tablepage')}}">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tables</span></a>
         </li>
 
         <!-- Nav Item - Categories -->
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('categories.index')}}">
                 <i class="fas fa-fw fa-filter"></i>
                 <span>Categories</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('students.index')}}">
+                <i class="fas fa-fw fa-user"></i>
+                <span>Students</span></a>
         </li>
 
         <!-- Divider -->
